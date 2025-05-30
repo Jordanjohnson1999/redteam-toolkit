@@ -1,34 +1,25 @@
-# Cron Persistence Simulator
+# Red team Toolkit
 
-**Author:** Seneca
-**Repo:** [redteam_toolkit](https://github.com/Jordanjohnson1999/redteam-toolkit)
-**Tool:** cron_persistence.py
-**Type:** Linux Persistence Simulation Tool
-**Purpose:** Ethical Red Team education & practice
+A growing collection of simulated Red Team tools for ethical hacking, cybersecurity training, and scripting practice.
+
+## Tools
+
+- **Cron Persistence Simulator**
+    `cron_persistence.py`
+    Adds simulated `@reboot` jobs to demonstrate Linux persistence.
+
+- **Payload Generator**
+    [payload_generator/](./payload_generator)
+    Interactive payload builder for echo loggers, reverse shells, and cron jobs. Includes MITRE mapping.
+
+- **Payload Simulator**
+    `payload_simulator.py`
+    Simulates payload dropping, execution, and cleanup in a safe lab setting.
+
+- **Scan Logger**
+    `scan_logger.py`
+    Logs and timestamps your terminal-based Nmap or domain scans.
+
 ---
 
-### Ovoerview
-
-This tool simulates a common Linux persistence technique using the `cron` schduler.
-
-It allows users to:
-- Add a harmless `@reboot` cron job (mimicking attacker persistence)
-- View current cron jobs
-- Remove the simulated persistence
-
-The job writes a simple job message to `~/cron_persistence_log.txt` every time the system boots - simulating post-exploitation behavior in a safe, ethicl way.
----
-
-### Features
-- [x] Simulates cron-based persistence
-- [x] Prevents dublicate cron job entries
-- [x] Allows cleanup/removal of the job
-- [x] Educational and ethical by design
-- [x] Terminal-based interface for real-world realism
----
-
-## Usage
-Run the tool with
-
-```bash
-python3 cron_persistence.py
+> Each tool is documented in its own folder or file with a detailed README and use case.

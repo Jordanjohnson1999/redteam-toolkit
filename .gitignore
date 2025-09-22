@@ -1,0 +1,11 @@
+# Ignore outputs
+out/
+*.csv
+
+# Python artifacts
+__phycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+.vscode/
